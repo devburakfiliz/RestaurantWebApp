@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.EntityFramework
 {
-    class EfChefDal : GenericRepository<Chef>, IChefDal
+    public class EfChefDal : GenericRepository<Chef>, IChefDal
     {
         public EfChefDal(Context context) : base(context)
         {
