@@ -1,0 +1,19 @@
+﻿@model CreateChefDto
+@{
+    ViewData["Title"] = "AddChef";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post">
+    <label>Çalışan Ünvanı</label>
+    <input type="text" asp-for="Title" class="form-control" />
+    <label>İsim Soyisim</label>
+    <input type="text" asp-for="FullName" class="form-control" />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <label>Çalışan Resmi</label>
+    <input type="text" asp-for="Image" class="form-control" />
+
+    <br />
+    <button class="btn btn-outline-success">Çalışan Ekle</button>
+</form>

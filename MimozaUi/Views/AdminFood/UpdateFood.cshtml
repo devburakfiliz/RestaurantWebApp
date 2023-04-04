@@ -1,0 +1,22 @@
+﻿@model UpdateFoodDto
+@{
+    ViewData["Title"] = "UpdateFood";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<form method="post">
+    <input type="hidden" asp-for="FoodID" />
+    <label>Açıklama</label>
+    <input type="text" asp-for="FoodName" class="form-control" />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <label>Resim</label>
+    <input type="text" asp-for="FoodImage" class="form-control" />
+    <label>Fiyat</label>
+    <input type="text" asp-for="Price" class="form-control" />
+
+
+    <br />
+    <button class="btn btn-outline-success">Yemeği Güncelle</button>
+</form>

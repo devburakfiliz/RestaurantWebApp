@@ -1,0 +1,35 @@
+﻿@model List<ResultChefDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>ünvan</th>
+        <th>İsim Soyisim</th>
+        <th>Açıklama</th>
+        <th>Çalışan Resmi</th>
+
+        <th>Proje Güncelle</th>
+        <th>Proje Sil</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th> @item.ChefID</th>
+            <td> @item.Title</td>
+            <td> @item.FullName</td>
+            <td> @item.Description.Substring(0,20)</td>
+            <td> @item.Image</td>
+
+            <td> <a href="/AdminChef/UpdateChef/@item.ChefID" class="btn mb-1 btn-rounded btn-outline-success">Güncelle</a></td>
+            <td> <a href="/AdminChef/DeleteChef/@item.ChefID" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a></td>
+        </tr>
+
+    }
+</table>
+<a href="/AdminChef/AddChef/" class="btn mb-1 btn-rounded btn-outline-info">Yeni Proje Girişi</a>

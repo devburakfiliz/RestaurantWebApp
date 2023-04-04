@@ -1,0 +1,37 @@
+﻿@model List<ResultFood3Dto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+
+<table class="table table-bordered">
+    <h1>Pizza Çeşitleri</h1>
+    <tr>
+        <th>#</th>
+        <th>Yemek Adı</th>
+        <th>Açıklama</th>
+        <th>Resim</th>
+        <th>Fiyat</th>
+
+        <th>Proje Güncelle</th>
+        <th>Proje Sil</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th> @item.Food3ID</th>
+            <td> @item.FoodName</td>
+            <td> @item.Description</td>
+            <td> @item.FoodImage</td>
+            <td> @item.Price</td>
+
+            <td> <a href="/AdminFood3/UpdateFood3/@item.Food3ID" class="btn mb-1 btn-rounded btn-outline-success">Güncelle</a></td>
+            <td> <a href="/AdminFood3/DeleteFood3/@item.Food3ID" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a></td>
+        </tr>
+
+    }
+</table>
+<a href="/AdminFood3/AddFood3/" class="btn mb-1 btn-rounded btn-outline-info">Yeni Yemek Girişi</a>
