@@ -91,9 +91,7 @@ namespace WepApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WepApi v1"));
             }
 
-            app.UseHttpsRedirection();
 
-            app.UseCors("MimozaApiCors");
 
             app.UseRouting();
 

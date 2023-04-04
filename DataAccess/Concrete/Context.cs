@@ -12,7 +12,7 @@ namespace DataAccess.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=BURAK;initial catalog=MimozaDb; integrated security=true");
+            optionsBuilder.UseSqlServer(@"Server=BURAK;initial catalog=DbMimoza; integrated security=true");
         }
         public DbSet<Service> Services { get; set; }
         public DbSet<About> Abouts  { get; set; }

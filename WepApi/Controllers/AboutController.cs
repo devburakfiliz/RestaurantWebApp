@@ -27,9 +27,9 @@ namespace WepApi.Controllers
             return Ok(values);
         }
         [HttpPost]
-        public IActionResult AddAbout(About About)
+        public IActionResult AddAbout(About about)
         {
-            _AboutService.TInsert(About);
+            _AboutService.TInsert(about);
             return Ok();
         }
         [HttpDelete("{id}")]
@@ -40,9 +40,9 @@ namespace WepApi.Controllers
             return Ok();
         }
         [HttpPut]
-        public IActionResult UpdateAbout(About About)
+        public IActionResult UpdateAbout(About about)
         {
-            _AboutService.TUpdate(About);
+            _AboutService.TUpdate(about);
             return Ok();
         }
         [HttpGet("{id}")]
