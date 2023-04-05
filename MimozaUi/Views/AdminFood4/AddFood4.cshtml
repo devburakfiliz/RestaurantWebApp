@@ -1,0 +1,23 @@
+﻿@model CreateFood4Dto
+@{
+    ViewData["Title"] = "AddFood4";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+
+
+<form method="post">
+
+    <label>Yemek Adı</label>
+    <input type="text" asp-for="FoodName" class="form-control" />
+    <label>Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" />
+    <label>Resim</label>
+    <input type="text" asp-for="FoodImage" class="form-control" />
+    <label>Fiyat</label>
+    <input type="text" asp-for="Price" class="form-control" />
+
+
+    <br />
+    <button class="btn btn-outline-success">Yemeği Ekle</button>
+</form>
