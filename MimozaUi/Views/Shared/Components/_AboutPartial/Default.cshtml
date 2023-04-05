@@ -1,0 +1,24 @@
+﻿
+@model List<ResultAboutDto>
+
+
+
+<section id="section_2" class="ftco-about d-md-flex">
+
+
+
+        @foreach (var item in Model)
+        {
+
+
+            <div class="one-half img" style="background-image: url(@item.Image);"></div>
+            <div class="one-half ftco-animate">
+                <div class="heading-section ftco-animate ">
+                    <h2 class="mb-4"><span> @item.TitleOne </span>@item.TitleTwo   @item.TitleThree</h2>
+                </div>
+                <div>
+                    <p>@item.Description</p>
+                </div>
+            </div>
+        }
+</section>

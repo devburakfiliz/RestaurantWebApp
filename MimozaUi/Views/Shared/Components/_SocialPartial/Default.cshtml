@@ -1,0 +1,15 @@
+﻿
+@model List<ResultSocialDto>
+
+
+<div class="social d-md-flex pl-md-5 p-4 align-items-center">
+    <ul class="social-icon">
+
+        @foreach (var item in Model)
+        {
+            <li class="ftco-animate"><a href="@item.Link"><span class="icon-@item.Icon"></span></a></li>
+        }
+
+
+    </ul>
+</div>

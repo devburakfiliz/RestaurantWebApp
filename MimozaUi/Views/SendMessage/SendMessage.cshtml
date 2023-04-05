@@ -1,0 +1,45 @@
+﻿
+@model CreateContactDto
+
+
+<section id="section_5" class="ftco-appointment">
+    <div class="overlay"></div>
+    <div class="container-wrap">
+        <div class="row no-gutters d-md-flex align-items-center">
+            <div class="col-md-6 d-flex align-self-stretch">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12469.153325771935!2d27.4377604!3d38.6192475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99de74b42557d%3A0x11ea67e3cd39471a!2sMimoza%20Pide%20Lahmacun%20%C3%87orba%20Salonu!5e0!3m2!1str!2str!4v1680731694753!5m2!1str!2str" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6 appointment ftco-animate">
+                <h3 class="mb-3">Contact Us</h3>
+                <form asp-action="SendMessage" asp-controller="SendMessage" method="post" class="appointment-form">
+                    <div class="d-md-flex">
+                        <div class="form-group">
+                            <input type="text" name="FullName" class="form-control" placeholder="İsim Soyisim">
+                        </div>
+                    </div>
+                    <div class="d-me-flex">
+                        <div class="form-group">
+                            <input type="text" name="Email" class="form-control" placeholder="E Mail Adresiniz">
+                        </div>
+                    </div>
+                    <div class="d-me-flex">
+                        <div class="form-group">
+                            <input type="text" name="Phone" class="form-control" placeholder="Telefon">
+                        </div>
+                    </div>
+                    <div class="d-me-flex">
+                        <div class="form-group">
+                            <input type="text" name="Subject" class="form-control" placeholder="Konu">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send" class="btn btn-primary py-3 px-4">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

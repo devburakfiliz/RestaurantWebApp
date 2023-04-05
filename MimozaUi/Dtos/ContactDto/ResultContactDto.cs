@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Concrete
+namespace MimozaUi.Dtos.ContactDto
 {
-    public class Contact
+    public class ResultContactDto
     {
         public int ContactID { get; set; }
         public string FullName { get; set; }

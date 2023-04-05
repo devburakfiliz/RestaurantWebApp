@@ -6,36 +6,44 @@
         <div class="wrap d-md-flex">
             <div class="info">
                 <div class="row no-gutters">
-                    <div class="col-md-4 d-flex ftco-animate">
+                    <div class="col-md-3 d-flex ftco-animate">
                         <div class="icon"><span class="icon-phone"></span></div>
                         <div class="text">
-                            <h3>000 (123) 456 7890</h3>
-                            <p>A small river named Duden flows</p>
+
+                            <h3 href="tel:05558781775">0 555 878 1775</h3>
+
                         </div>
+
                     </div>
-                    <div class="col-md-4 d-flex ftco-animate">
+                    <div class="col-md-3 d-flex ftco-animate">
+                        <div class="icon"><span class="icon-phone"></span></div>
+                        <div class="text">
+
+                            <h3 href="tel:02362501775">0 236 250 1775</h3>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-3 d-flex ftco-animate">
                         <div class="icon"><span class="icon-my_location"></span></div>
                         <div class="text">
-                            <h3>198 West 21th Street</h3>
-                            <p>Suite 721 New York NY 10016</p>
+                            <h3>Şehitler Mahallesi</h3>
+                            <p>723 Sk. Şehzadeler/Manisa</p>
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex ftco-animate">
+                    <div class="col-md-3 d-flex ftco-animate">
                         <div class="icon"><span class="icon-clock-o"></span></div>
                         <div class="text">
-                            <h3>Open Monday-Friday</h3>
-                            <p>8:00am - 9:00pm</p>
+                            <h3>Haftanın 7 günü</h3>
+                            <p>10:00am - 22:00pm</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="social d-md-flex pl-md-5 p-4 align-items-center">
-                <ul class="social-icon">
-                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-            </div>
+            @await Component.InvokeAsync("_SocialPartial")
+
+
+
         </div>
     </div>
 </section>

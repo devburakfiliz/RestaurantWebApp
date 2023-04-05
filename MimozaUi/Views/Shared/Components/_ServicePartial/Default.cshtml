@@ -1,0 +1,36 @@
+﻿
+
+@model List<ResultServiceDto>
+
+<section id="section_3" class="ftco-section ftco-services">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h2 class="mb-4">Hizmetlerimiz</h2>
+                <p>Siz değerli müşterilerimize unutamayacağınız bir lezzet deneyimi sunuyoruz.</p>
+            </div>
+        </div>
+
+   
+        <div class="row">
+            @foreach (var item in Model)
+            {
+
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="media d-block text-center block-6 services">
+                        <div class="icon d-flex justify-content-center align-items-center mb-5">
+                            <span class="flaticon-@item.ServiceIcon"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">@item.ServiceTitle</h3>
+                            <p>@item.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+            
+        </div>
+    </div>
+</section>

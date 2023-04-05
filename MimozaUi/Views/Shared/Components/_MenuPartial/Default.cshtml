@@ -1,0 +1,75 @@
+﻿<section id="section_4" class="ftco-menu">
+    <div class="container-fluid">
+        <div class="row d-md-flex">
+
+            <div class="col-lg-12 ftco-animate p-md-5">
+                <div class="row">
+                    <div class="col-md-12 nav-link-wrap mb-5" style="justify-content:center;">
+                        <div class="row justify-content-center mb-5 pb-3">
+                            <div class="col-md-7 heading-section ftco-animate text-center">
+                                <h2 class="mb-4">Menü</h2>
+                            </div>
+                        </div>
+
+                        <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Pideler</a>
+
+                            <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Kebaplar</a>
+
+                            <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Dürümler</a>
+
+                            <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">Pizzalar</a>
+
+                            <a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">Güveçler</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center">
+
+                        <div class="tab-content ftco-animate" id="v-pills-tabContent">
+
+                            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                                <div class="row">
+
+                                    @await Component.InvokeAsync("_PidePartial")
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                                <div class="row">
+
+                                    @await Component.InvokeAsync("_KebapPartial")
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                                <div class="row">
+
+                                    @await Component.InvokeAsync("_WrapPartial")
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                                <div class="row">
+
+                                    @await Component.InvokeAsync("_PizzaPartial")
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                                <div class="row">
+
+                                    @await Component.InvokeAsync("_StewPartial")
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

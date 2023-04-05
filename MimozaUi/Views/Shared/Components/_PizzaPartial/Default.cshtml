@@ -1,0 +1,23 @@
+﻿@model List<ResultFood3Dto>
+
+
+
+
+
+@foreach (var item in Model)
+{
+
+    <div class="col-lg-4 d-flex ftco-animate">
+        <div class="services-wrap d-flex">
+            <a href="#" class="img" style="background-image: url(@item.FoodImage);"></a>
+            <div class="text p-4">
+                <h3>@item.FoodName</h3>
+                <p>@item.Description </p>
+            </div>
+        </div>
+    </div>
+
+
+
+}
+
