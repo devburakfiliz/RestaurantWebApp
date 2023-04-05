@@ -681,10 +681,11 @@ h1, h2, h3, h4, h5,
 }
 
 //SERVICES
-.ftco-services{
-	background: url(../images/food.png) repeat;
+.ftco-services {
+	background: url(../../wwwroot/MimozaUi/images/food.png) repeat;
 	color: darken($primary,50%);
-	.overlay{
+
+	.overlay {
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -694,8 +695,9 @@ h1, h2, h3, h4, h5,
 		background: $primary;
 		opacity: 0;
 	}
-	.heading-section{
-		h2{
+
+	.heading-section {
+		h2 {
 			color: darken($primary,70%);
 		}
 	}

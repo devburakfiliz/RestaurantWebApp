@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{C2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiConsume", "ApiConsume", "{9FA4E4CC-9B63-4419-AEA5-62C7EC47EB0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimozaUi", "MimozaUi\MimozaUi.csproj", "{9DA511E0-04BC-421D-AE52-1BE191DC454B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MimozaUi", "MimozaUi\MimozaUi.csproj", "{9DA511E0-04BC-421D-AE52-1BE191DC454B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
